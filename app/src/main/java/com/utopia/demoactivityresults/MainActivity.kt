@@ -29,6 +29,12 @@ class MainActivity : AppCompatActivity() {
     findViewById<Button>(R.id.btn_get_content).setOnClickListener {
       getContent.launch("image/*")
     }
+
+    val myLifecycleObserver = MyLifecycleObserver(activityResultRegistry)
+    lifecycle.addObserver(myLifecycleObserver)
+    findViewById<Button>(R.id.btn_get_content_by_obj).setOnClickListener {
+      myLifecycleObserver.selectImage()
+    }
   }
 
   private fun nextPage() {
