@@ -35,6 +35,10 @@ class MainActivity : AppCompatActivity() {
     findViewById<Button>(R.id.btn_get_content_by_obj).setOnClickListener {
       myLifecycleObserver.selectImage()
     }
+
+    findViewById<Button>(R.id.btn_pick_ringtone).setOnClickListener {
+      myLifecycleObserver.pickRingtone()
+    }
   }
 
   private fun nextPage() {

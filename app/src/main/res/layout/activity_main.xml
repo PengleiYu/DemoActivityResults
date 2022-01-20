@@ -29,4 +29,10 @@
     android:layout_height="wrap_content"
     android:text="get content by obj" />
 
+  <Button
+    android:id="@+id/btn_pick_ringtone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="pick ringtone" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>
